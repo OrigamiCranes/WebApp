@@ -74,12 +74,12 @@ resources: {}
 livenessProbe:
   httpGet:
     path: /albums
-    port: http
+    port: 8080
     host: "localhost"
 readinessProbe:
   httpGet:
     path: /albums
-    port: http
+    port: 8080
     host: "localhost"
 
 autoscaling:
