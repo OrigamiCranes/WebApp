@@ -75,12 +75,11 @@ livenessProbe:
   httpGet:
     path: /albums
     port: 8080
-    host: "localhost"
+    
 readinessProbe:
   httpGet:
     path: /albums
     port: 8080
-    host: "localhost"
 
 autoscaling:
   enabled: false
